@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>submit</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+                
+        <form action="/submit" method='post'>
+            <div class="form-group">
+                <div class = 'row'>
+                    <div class = 'col'>
+                        <label for="Brand">Brand:</label><br>
+                        <input type="text" id="Brand" name="Brand" placeholder="Tata "><br>
+                        
+                    </div>
+                    <div class = 'col'>
+                    <label for="Location">Location:</label><br>
+                    <input type="text" id="Location" name="Location" placeholder="Hyderabad"><br><br>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col'>
+                        <label for="Year ">Year:</label><br>
+                        <input type="text" id="Year" name="Year" placeholder="2018"><br><br>
+                    </div>
+                    <div class = 'col'>   
+                        <label for="Kilometers_Driven">Kilometers_Driven:</label><br>
+                        <input type="text" id="Kilometers_Driven" name="Kilometers_Driven" placeholder="in Km"><br><br>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col'>
+                        <label for="Mileage">Mileage:</label><br>
+                        <input type="text" id="Mileage" name="Mileage" placeholder="in kmpl"><br><br>
+                    </div>
+                    <div class = 'col'>   
+                        <label for="Engine">Engine:</label><br>
+                        <input type="text" id="Engine" name="Engine" placeholder='in cc'><br><br>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col'>
+                        <label for="Power">Power:</label><br>
+                        <input type="text" id="Power" name="Power" placeholder="in bhp"><br><br>
+                    </div>
+                    <div class = 'col'>   
+                        <label for="Seats">Seats:</label><br>
+                        <input type="text" id="Seats" name="Seats" placeholder="4"><br><br>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col'>
+                        <label for="Fuel_Type">Fuel_Type:</label><br>
+                        <select id="Fuel_Type" name="Fuel_Type">
+                            <option value="option1">Diesel</option>
+                            <option value="option2">Petrol</option>
+                        </select><br><br>
+                    </div>
+                    <div class = 'col'>   
+                        <label for="Transmission">Transmission:</label><br>
+                        <select id="Transmission" name="Transmission">
+                            <option value="option1">Manual</option>
+                            <option value="option2">Automatic</option>
+                          </select><br><br>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col'>
+                        <label for="Owner_Type">Owner_Type:</label><br>
+                        <select id="Owner_Type" name="Owner_Type">
+                            <option value="option1">First</option>
+                            <option value="option2">Second</option>
+                            <option value="option3">Third</option>
+                            <option value="option4">Fourth & Above</option>
+                          </select><br><br>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form> 
+          
+          
+        <script type="text/javascript" src='{{ url_for('static',filename='script/script.js')}}'></script>
+    </body>
+</html>
